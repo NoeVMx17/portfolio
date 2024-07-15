@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()" data-cat="INICI" data-es="INICIO" data-en="HOME">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" data-cat="SOBRE MI" data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()" data-cat="PROJECTES" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" data-cat="SKILLS" data-es="SKILLS" data-en="SKILLS">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" data-cat="CURRICULUM" data-es="CURRICULUM" data-en="CURRICULUM">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" data-cat="CONTACTE" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <img src="img/catalunya.png" alt = "Catalan" onclick="switchLanguage('cat')">
+                <img src="img/espanya.png" alt = "Español" onclick="switchLanguage('es')">
+                <img src="img/unitedkingdom.png" alt = "English" onclick="switchLanguage('en')">
+            </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotoNoe.jpeg" alt="">
+            </div>
+            <h1>NOÈ VILLANUEVA</h1>
+            <h3 data-cat="Desenvolupador d'aplicacions i videojocs" data-es="Desarrollador de aplicaciones y videojuegos" data-en="Apps & Videogames Developer">Desarrollador de aplicaciones y videojuegos</h3>
+            <div class="redes">
+                <a href="#" onclick="redirigir('https:'+'/'+'/www.linkedin.com/in/noevillanuevamoya/')"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" onclick="redirigir('https:'+'/'+'/github.com/NoeVMx17?tab=projects/')"><i class="fa-brands fa-github"></i></a>
+                <a href="#" onclick="redirigir('https:'+'/'+'/gitlab.com/NoeVM17/')"><i class="fa-brands fa-gitlab"></i></a>
+                <a href="#" onclick="redirigir('https:'+'/'+'/noevmx17.itch.io/')"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="#" onclick="redirigir('https:'+'/'+'/x.com/noevmx17_dev/')"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="contenido-presentacion">
+            <h2 data-cat="Hola! Em dic Noè Villanueva" data-es="¡Hola! Soy Noè Villanueva" data-en="Hi! I'm Noè Villanueva">¡Hola! Soy Noè Villanueva</h2>
+            <h3 data-cat="Apps & Videogames Developer" data-es="Apps & Videogames Developer" data-en="Apps & Videogames Developer">Apps & Videogames Developer</h2>
+            <p data-cat="" data-es="" data-en="">HOla sskdmaksdmsadadasdasdadadadasdsadadadadadadadadadadada</p>
+        </div>
+    </section>
+    
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 data-cat="Sobre Mi" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
+            <p><span data-cat="Hola! Em dic Noè Villanueva" data-es="¡Hola! Soy Noè Villanueva" data-en="Hi! I'm Noè Villanueva">¡Hola! Soy Noé Villanueva</span>, un apasionado informático graduado en Desarrollo de Aplicaciones Multiplataforma en el Instituto Tecnológico de Barcelona. Me especializo en el desarrollo de aplicaciones orientado a videojuegos y ocio digital, y estoy motivado para aprender nuevas habilidades y aplicar mis conocimientos en el sector profesional.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <!--<div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Contacto</strong>
+                            +34 620735937
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nvillanuevamoya@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Sant Pere de Ribes, Barcelona, España
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>-->
+
+                <!-- idiomas -->
+                <div class="col">
+                    <h3 data-en="Languages" data-es="Idiomas" data-cat="Idiomes">Idiomas</h3>
+                    <div class="contenedor-idiomas">
+                        <div class="idioma">
+                            <i class="fa-solid fa-language"></i>
+                            <span data-en="Catalan" data-es="Catalán" data-cat="Català">Catalán</span>
+                            <div class="nivel" data-en="Native" data-es="Nativo" data-cat="Nadiu">Nativo</div>
+                        </div>
+                        <div class="idioma">
+                            <i class="fa-solid fa-language"></i>
+                            <span data-en="Spanish" data-es="Español" data-cat="Espanyol">Español</span>
+                            <div class="nivel" data-en="Native" data-es="Nativo" data-cat="Nadiu">Nativo</div>
+                        </div>
+                        <div class="idioma">
+                            <i class="fa-solid fa-language"></i>
+                            <span data-en="English" data-es="Inglés" data-cat="Anglès">Inglés</span>
+                            <div class="nivel" data-en="Intermediate (B1)" data-es="Intermedio (B1)" data-cat="Intermedi (B1)">Intermedio (B1)</div>
+                        </div>
+                        <div class="idioma">
+                            <i class="fa-solid fa-language"></i>
+                            <span data-en="German" data-es="Alemán" data-cat="Alemany">Alemán</span>
+                            <div class="nivel" data-en="Basic (A1.2)" data-es="Básico (A1.2)" data-cat="Bàsic (A1.2)">Básico (A1.2)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- datos de interés -->
+                <!--<div class="col">
+                    <h3>Datos de Interés</h3>
+                    <ul>
+                        <li>
+                            · Disponibilidad horaria
+                        </li>
+                        <li>
+                            · Vehículo propio
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+            <a href="CV Noè v4.pdf" target="_blank">
+                <button>
+                    <span class="button-text" data-cat="Descarregar CV" data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
+                    <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+
+    <section id="proyectos" class="proyectos">
+        <h2 data-cat="PROJECTES" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</h2>
+        <div class="proyectos-filters">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('personal')">Personal</button>
+            <button onclick="filterProjects('academic')">Academic</button>
+        </div>
+        <div class="proyectos-container">
+            <div class="proyectos-item personal">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+            <div class="proyectos-item academic">
+                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3 data-cat="Llenguatges de Programació" data-es="Lenguajes de Programación" data-en="Programming Languages">Lenguajes de Programación</h3>
+                        </button>
+                        <div id="dropContentPL" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">C#</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Kotlin</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="level medium">
+                                    <div class="level-bar medium-bar"></div>
+                                    <span class="level-text">Medium</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="level medium">
+                                    <div class="level-bar medium-bar"></div>
+                                    <span class="level-text">Medium</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Python</span>
+                                <div class="level low">
+                                    <div class="level-bar low-bar"></div>
+                                    <span class="level-text">Low</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Swift</span>
+                                <div class="level low">
+                                    <div class="level-bar low-bar"></div>
+                                    <span class="level-text">Low</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Visual Basic</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3>Database Management</h3>
+                        </button>
+                        <div id="dropContentDM" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">MySQL</span>
+                                <div class="level medium">
+                                    <div class="level-bar medium-bar"></div>
+                                    <span class="level-text">Medium</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="level medium">
+                                    <div class="level-bar medium-bar"></div>
+                                    <span class="level-text">Medium</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="level medium">
+                                    <div class="level-bar medium-bar"></div>
+                                    <span class="level-text">Medium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3>Development Platforms</h3>
+                        </button>
+                        <div id="dropContentDP" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">Unity</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Unreal Engine</span>
+                                <div class="level low">
+                                    <div class="level-bar low-bar"></div>
+                                    <span class="level-text">Low</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Android Studio</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Xcode</span>
+                                <div class="level low">
+                                    <div class="level-bar low-bar"></div>
+                                    <span class="level-text">Low</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Figma</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3>ERP-CRM Services</h3>
+                        </button>
+                        <div id="dropContentERP" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">Odoo</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3>Web Development</h3>
+                        </button>
+                        <div id="dropContentWD" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">Unity</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
+                            <h3>Operation Systems Administration</h3>
+                        </button>
+                        <div id="dropContentERP" class="dropdown-content oculto">
+                            <div class="skill">
+                                <span class="skill-name">Odoo</span>
+                                <div class="level high">
+                                    <div class="level-bar high-bar"></div>
+                                    <span class="level-text">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Historial educativo</h3>
+                    <div class="item izq">
+                        <h4>Bootcamp de Desenvolupament d'Aplicacions Mòbils (Android & iOS) - Programa Singulars</h4>
+                        <span class="centro">Eurecat Academy</span>
+                        <span class="fecha">Mar 2024 - Jul 2024</span>
+                        <p>Desenvolupar aplicacions per a dispositius mòbils (smartphones i tablets) amb sistemes operatius oberts i propiertaris (iOS).</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CFGS - Desenvolupament d'Aplicacions Multiplataforma, Perfil Professional en Oci Digital i Videojocs</h4>
+                        <span class="centro">Institut Tecnològic de Barcelona</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grau en Estadística Aplicada (No finalitzat)</h4>
+                        <span class="centro">Universitat Autònoma de Barcelona</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Títol de batxillerat científic (LOE 2000)</h4>
+                        <span class="centro">Institut Joan Ramón Benaprès</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Estudiant de pràctiques</h4>
+                        <span class="centro">DXC Technology, Barcelona</span>
+                        <span class="fecha">2023</span>
+                        <p><b>Business Applicacion Engineer Junior</b> en el projecte tSocial dintre del programa de Transformació Digital del tramitador de Prestacions Socials</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cambrer de barra</h4>
+                        <span class="centro">Penya Barcelonista Aitana Bonmatí, Sant Pere de Ribes</span>
+                        <span class="fecha">2023</span>
+                        <span class="centro">La Xixonenca, Sant Pere de Ribes</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cambrer de sala</h4>
+                        <span class="centro">Servihostel ETT S.L.</span>
+                        <span class="fecha">2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2 data-cat="CONTACTE" data-es="CONTACTO" data-en="CONTACT">CONTACTO</h2>
+            <div class="formulario">
+                <input type="text" id="full-name" placeholder="Enter your full name..." required>
+                <input type="email" id="email" placeholder="Enter your email..." required>
+                <textarea id="message" cols="30" rows="10" placeholder="Enter your message.." required></textarea>
+                <button id="form-button">
+                    <span data-cat="Enviar Missatge" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+                <p class="form-response" id="form-response" style="display: none; color: #1CB698;"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-gitlab"></i></a>
+            <a href="#"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
