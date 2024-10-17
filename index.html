@@ -12,7 +12,7 @@
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
-            <nav id="nav">
+         <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()" data-cat="INICI" data-es="INICIO" data-en="HOME">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()" data-cat="SOBRE MI" data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
@@ -23,9 +23,9 @@
                 </ul>
             </nav>
             <div class="language-switcher">
-                <img src="img/catalunya.png" alt = "Catalan" onclick="switchLanguage('cat')">
-                <img src="img/espanya.png" alt = "Español" onclick="switchLanguage('es')">
-                <img src="img/unitedkingdom.png" alt = "English" onclick="switchLanguage('en')">
+                <img src="img/catalunya.png" alt="Catalan" onclick="switchLanguage('cat')">
+                <img src="img/espanya.png" alt="Español" onclick="switchLanguage('es')">
+                <img src="img/unitedkingdom.png" alt="English" onclick="switchLanguage('en')">
             </div>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -39,8 +39,8 @@
             <div class="contenedor-img">
                 <img src="img/fotoNoe.jpeg" alt="">
             </div>
-            <h1>NOÈ VILLANUEVA</h1>
-            <h3 data-cat="Desenvolupador d'aplicacions i videojocs" data-es="Desarrollador de aplicaciones y videojuegos" data-en="Apps & Videogames Developer">Desarrollador de aplicaciones y videojuegos</h3>
+            <!--<h1>NOÈ VILLANUEVA</h1>
+            <h3 data-cat="Desenvolupador d'aplicacions i videojocs" data-es="Desarrollador de aplicaciones y videojuegos" data-en="Apps & Videogames Developer">Desarrollador de aplicaciones y videojuegos</h3>-->
             <div class="redes">
                 <a href="#" onclick="redirigir('https:'+'/'+'/www.linkedin.com/in/noevillanuevamoya/')"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#" onclick="redirigir('https:'+'/'+'/github.com/NoeVMx17?tab=projects/')"><i class="fa-brands fa-github"></i></a>
@@ -51,8 +51,7 @@
         </div>
         <div class="contenido-presentacion">
             <h2 data-cat="Hola! Em dic Noè Villanueva" data-es="¡Hola! Soy Noè Villanueva" data-en="Hi! I'm Noè Villanueva">¡Hola! Soy Noè Villanueva</h2>
-            <h3 data-cat="Apps & Videogames Developer" data-es="Apps & Videogames Developer" data-en="Apps & Videogames Developer">Apps & Videogames Developer</h2>
-            <p data-cat="" data-es="" data-en="">HOla sskdmaksdmsadadasdasdadadadasdsadadadadadadadadadadada</p>
+            <h1 data-cat="Apps & Videogames Developer" data-es="Apps & Videogames Developer" data-en="Apps & Videogames Developer">Apps & Videogames Developer</h2>
         </div>
     </section>
     
@@ -60,73 +59,34 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2 data-cat="Sobre Mi" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
-            <p><span data-cat="Hola! Em dic Noè Villanueva" data-es="¡Hola! Soy Noè Villanueva" data-en="Hi! I'm Noè Villanueva">¡Hola! Soy Noé Villanueva</span>, un apasionado informático graduado en Desarrollo de Aplicaciones Multiplataforma en el Instituto Tecnológico de Barcelona. Me especializo en el desarrollo de aplicaciones orientado a videojuegos y ocio digital, y estoy motivado para aprender nuevas habilidades y aplicar mis conocimientos en el sector profesional.</p>
+            <p>
+                <span data-cat="Hola! Em dic Noè Villanueva" data-es="¡Hola! Soy Noè Villanueva" data-en="Hi! I'm Noè Villanueva">¡Hola! Soy Noé Villanueva</span>,
+            </p>
+            <p data-cat="Sóc un jove desenvolupador graduat en DAMv, amb una formació adicional d'un Bootcamp en desenvolupament d'aplicacions mòbils. Actualment estic buscant activament oportunitats en el sector com a Apps & Videogames Developer."
+               data-es="Soy un joven desarrollador graduado en DAMv, con formación especializada adicional de un Bootcamp en desarrollo de aplicaciones móviles. Actualmente me encuentro en busca activa de oportunidades en el sector como Apps & Videogames Developer."
+               data-en="I am a young developer graduated in DAMv, with specialized additional training from a Bootcamp in mobile application development. I am currently actively looking for opportunities in the sector as an Apps & Videogames Developer.">
+               Soy un joven desarrollador graduado en DAMv, con formación especializada adicional de un Bootcamp en desarrollo de aplicaciones móviles. 
+               Actualmente me encuentro en busca activa de oportunidades en el sector como Apps & Videogames Developer.
+            </p>
+            <p data-cat="Fins ara he treballat amb C#, Kotlin i Swift i he desenvolupat diversos projectes tant personals com acadèmics. Un dels projectes més destacats que he realitzat és ITB Infected, on vaig desenvolupar un videojoc de terror ambientat en un institut. A més d'altres aplicacions mòbils per a iOS i Android, com una app de tasques, un Memory Game o una app del temps."
+                data-es="Hasta ahora he trabajado con C#, Kotlin y Swift y he desarrollado varios proyectos tanto personales como académicos. Uno de los proyectos más destacados que he realizado es ITB Infected, donde desarrollé un videojuego de terror ambientado en un instituto. Además de otras aplicaciones móviles para iOS y Android, como una app de tareas, un Memory Game o una app del tiempo."
+                data-en="So far, I have worked with C#, Kotlin, and Swift and have developed various projects both personal and academic. One of the most notable projects I have completed is ITB Infected, where I developed a horror video game set in a school. I also developed other mobile applications for iOS and Android, such as a task app, a Memory Game, and a weather app.">
+                Hasta ahora he trabajado con C#, Kotlin y Swift (entre otros) y he desarrollado varios proyectos tanto personales como académicos. Uno de los proyectos más destacados que he realizado durante mi época académica es ITB Infected, donde desarrollé un videojuego de terror ambientado en un instituto. 
+                Además de otras aplicaciones móviles para iOS y Android, como una app de tareas, un Memory Game o una app del tiempo.
+            </p>
+            <p data-cat="Em considero una persona a qui sempre li ha agradat investigar i voler entendre tot el que l'envolta, i gràcies a això, la programació m'ha semblat interessant des del primer dia. Resoldre problemes i voler crear coses noves m'han mantingut motivat per endinsar-me en aquest món."
+                data-es="Me considero una persona muy curiosa a quien siempre le ha gustado investigar y querer entender todo lo que le rodea, y gracias a esto, la programación me ha parecido interesante desde el primer día. Resolver problemas y querer crear cosas nuevas me han mantenido motivado para adentrarme en este mundo."
+                data-en="I consider myself a very curious person who has always enjoyed investigating and wanting to understand everything around me, and thanks to that, programming has seemed interesting to me since day one. Solving problems and wanting to create new things have kept me motivated to immerse myself in this world.">
+                Me considero una persona muy curiosa a quien siempre le ha gustado investigar y querer entender todo lo que le rodea, y gracias a esto, la programación me ha parecido interesante desde el primer día. Resolver problemas y querer crear cosas nuevas me han mantenido motivado para adentrarme en este mundo.
+            </p>
+            <p data-cat="El meu objectiu és seguir creixent i perfeccionant-me per poder contribuir en projectes innovadors i ambiciosos. He pogut conèixer el sector quan vaig treballar com a Business Application Engineer Junior a DXC Technology, on vaig aprendre com es treballa en aquest àmbit. Ara el meu objectiu és seguir creixent i perfeccionant-me per poder contribuir en projectes innovadors i ambiciosos. Estic disposat a assumir nous reptes i amb ganes d'aportar valor al sector."
+                data-es="Mi objetivo es seguir creciendo y perfeccionándome para poder contribuir en proyectos innovadores y ambiciosos. He podido conocer el sector cuando trabajé como Business Application Engineer Junior en DXC Technology y he aprendido cómo se trabaja dentro de este. Mi objetivo ahora es seguir creciendo y perfeccionándome para poder contribuir en proyectos innovadores y ambiciosos. Estoy dispuesto a asumir nuevos retos y con ganas de aportar valor al sector."
+                data-en="My goal is to continue growing and improving to be able to contribute to innovative and ambitious projects. I have been able to gain insight into the industry during my time as a Business Application Engineer Junior at DXC Technology, where I learned how things work in this field. Now my goal is to keep growing and improving in order to contribute to innovative and ambitious projects. I am ready to take on new challenges and eager to bring value to the industry.">
+                He podido conocer el sector cuando trabajé como Business Application Engineer Junior en DXC Technology y he aprendido cómo se trabaja dentro de este. Mi objetivo ahora es seguir creciendo y perfeccionándome para poder contribuir en proyectos innovadores y ambiciosos. Estoy dispuesto a asumir nuevos retos y con ganas de aportar valor al sector.
+            </p>
 
-            <div class="fila">
-                <!-- datos personales -->
-                <!--<div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Contacto</strong>
-                            +34 620735937
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            nvillanuevamoya@gmail.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Sant Pere de Ribes, Barcelona, España
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>ESTUDIANTE</span>
-                        </li>
-                    </ul>
-                </div>-->
-
-                <!-- idiomas -->
-                <div class="col">
-                    <h3 data-en="Languages" data-es="Idiomas" data-cat="Idiomes">Idiomas</h3>
-                    <div class="contenedor-idiomas">
-                        <div class="idioma">
-                            <i class="fa-solid fa-language"></i>
-                            <span data-en="Catalan" data-es="Catalán" data-cat="Català">Catalán</span>
-                            <div class="nivel" data-en="Native" data-es="Nativo" data-cat="Nadiu">Nativo</div>
-                        </div>
-                        <div class="idioma">
-                            <i class="fa-solid fa-language"></i>
-                            <span data-en="Spanish" data-es="Español" data-cat="Espanyol">Español</span>
-                            <div class="nivel" data-en="Native" data-es="Nativo" data-cat="Nadiu">Nativo</div>
-                        </div>
-                        <div class="idioma">
-                            <i class="fa-solid fa-language"></i>
-                            <span data-en="English" data-es="Inglés" data-cat="Anglès">Inglés</span>
-                            <div class="nivel" data-en="Intermediate (B1)" data-es="Intermedio (B1)" data-cat="Intermedi (B1)">Intermedio (B1)</div>
-                        </div>
-                        <div class="idioma">
-                            <i class="fa-solid fa-language"></i>
-                            <span data-en="German" data-es="Alemán" data-cat="Alemany">Alemán</span>
-                            <div class="nivel" data-en="Basic (A1.2)" data-es="Básico (A1.2)" data-cat="Bàsic (A1.2)">Básico (A1.2)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- datos de interés -->
-                <!--<div class="col">
-                    <h3>Datos de Interés</h3>
-                    <ul>
-                        <li>
-                            · Disponibilidad horaria
-                        </li>
-                        <li>
-                            · Vehículo propio
-                        </li>
-                    </ul>
-                </div>-->
-            </div>
-            <a href="CV Noè v4.pdf" target="_blank">
+        </div>
+            <a id="cv-download" href="CV_NoeVillanueva ESP.pdf" target="_blank">
                 <button>
                     <span class="button-text" data-cat="Descarregar CV" data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
                     <i class="fa-solid fa-download"></i>
@@ -137,329 +97,431 @@
     </section>
 
     <!-- SECCION PROYECTOS -->
-
     <section id="proyectos" class="proyectos">
-        <h2 data-cat="PROJECTES" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</h2>
+        <h2 data-cat="Projectes" data-es="Proyectos" data-en="Projects">Proyectos</h2>
         <div class="proyectos-filters">
-            <button onclick="filterProjects('all')">All</button>
-            <button onclick="filterProjects('personal')">Personal</button>
-            <button onclick="filterProjects('academic')">Academic</button>
+            <button onclick="filterProjects('all')" class="active">All</button>
+            <button onclick="filterProjects('apps')">Apps</button>
+            <button onclick="filterProjects('videogames')">Videogames</button>
         </div>
-        <div class="proyectos-container">
-            <div class="proyectos-item personal">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+        <div class="container__card">
+            <div class="card c1 apps">
+                <div class="icon">
+                    <img src="img/Valorant.JPG" alt="Valorant MemoryGame">
+                    <video src="img/memorygame.mp4" muted></video>
+                </div>
+                <div class="info__description">
+                    <h3>Valorant Memory Game</h3>
+                    <p data-cat="Aplicació mòbil per Android basada en un joc de memòria amb la temàtica de Valorant. Desafia la memòria visual i la velocitat del jugador."
+                    data-es="Aplicación móvil diseñada para Android sobre un juego de memoria con la temática del videojuego Valorant. Juego para desafiar la memoria visual y velocidad del jugador."
+                    data-en="Android mobile app based on a memory game with the Valorant theme. It challenges the player's visual memory and speed.">
+                    Aplicación móvil diseñada para Android sobre un juego de memoria con la temática del videojuego Valorant. Juego para desafiar la memoria visual y velocidad del jugador.
+                    </p>
+                <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                <div class="icons">
+                        <img src="img/kotlin.png" alt="Kotlin Icon">
+                        <img src="img/androidstudio.png" alt="Android Studio Icon">
+                    </div>
+                    <input type="button" value="Ver más">
+                </div>
             </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
+    
+            <div class="card c1 apps">
+                <div class="icon">
+                    <img src="img/weatherapp.JPG" alt="Weather App">
+                    <video src="img/weatherapp.mp4" muted></video>
+                </div>
+                <div class="info__description">
+                    <h3>Weather App</h3>
+                    <p data-cat="Aplicació mòbil per Android que mostra informació meteorològica, el cicle lunar i les marees de qualsevol ciutat del món. Ofereix previsions amb temperatura, humitat i velocitat del vent."
+                    data-es="Aplicación móvil diseñada para Android desarrollada para mostrar al usuario la información meteorológica, el ciclo lunar y la marea de cualquier ciudad del mundo. La aplicación ofrece pronósticos, incluyendo temperaturas, condiciones climáticas, humedad o viento."
+                    data-en="Android mobile app designed to display weather information, the lunar cycle, and tides for any city in the world. It provides forecasts including temperature, humidity, and wind speed.">
+                    Aplicación móvil diseñada para Android desarrollada para mostrar al usuario la información meteorológica, el ciclo lunar y la marea de cualquier ciudad del mundo. La aplicación ofrece pronósticos, incluyendo temperaturas, condiciones climáticas, humedad o viento.
+                    </p>
+                <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                <div class="icons">
+                        <img src="img/kotlin.png" alt="Kotlin Icon">
+                        <img src="img/androidstudio.png" alt="Android Studio Icon">
+                    </div>
+                    <input type="button" value="Ver más">
+                </div>
             </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-            <div class="proyectos-item academic">
-                <video class="proyectos-video" src="img/video1.mp4" muted></video>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>SKILLS</h2>
-            <div class="fila">
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3 data-cat="Llenguatges de Programació" data-es="Lenguajes de Programación" data-en="Programming Languages">Lenguajes de Programación</h3>
-                        </button>
-                        <div id="dropContentPL" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">C#</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Kotlin</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="level medium">
-                                    <div class="level-bar medium-bar"></div>
-                                    <span class="level-text">Medium</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">TypeScript</span>
-                                <div class="level medium">
-                                    <div class="level-bar medium-bar"></div>
-                                    <span class="level-text">Medium</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Python</span>
-                                <div class="level low">
-                                    <div class="level-bar low-bar"></div>
-                                    <span class="level-text">Low</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Swift</span>
-                                <div class="level low">
-                                    <div class="level-bar low-bar"></div>
-                                    <span class="level-text">Low</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Visual Basic</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card c2 videogames">
+                <div class="icon">
+                    <img src="img/ItbInfected.JPG" alt="ItbInfected Game">
+                    <video src="img/itb_infected.mp4" muted></video>
                 </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3>Database Management</h3>
-                        </button>
-                        <div id="dropContentDM" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">MySQL</span>
-                                <div class="level medium">
-                                    <div class="level-bar medium-bar"></div>
-                                    <span class="level-text">Medium</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">PostgreSQL</span>
-                                <div class="level medium">
-                                    <div class="level-bar medium-bar"></div>
-                                    <span class="level-text">Medium</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">MongoDB</span>
-                                <div class="level medium">
-                                    <div class="level-bar medium-bar"></div>
-                                    <span class="level-text">Medium</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="info__description">
+                    <h3>ITB Infected</h3>
+                    <p data-cat="Videojoc de terror i supervivència en 3D ambientat en un institut infectat de zombis. El jugador ha de sobreviure i recollir objectes per escapar amb l'ajuda d'un NPC. Projecte final de cicle realitzat amb dos companys."
+                    data-es="Videojuego de terror y supervivencia 3D ambientado en un instituto infestado de zombis. El jugador debe sobrevivir y recoger diferentes objetos para conseguir escapar del lugar con ayuda de un NPC. Proyecto de final de ciclo junto a 2 compañeros más."
+                    data-en="3D horror and survival video game set in a zombie-infested high school. The player must survive and collect various items to escape with the help of an NPC. Final cycle project completed with 2 teammates.">
+                    Videojuego de terror y supervivencia 3D ambientado en un instituto infestado de zombis. El jugador debe sobrevivir y recoger diferentes objetos para conseguir escapar del lugar con ayuda de un NPC. Proyecto de final de ciclo junto a 2 compañeros más.
+                    </p>
+                <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                <div class="icons">
+                        <img src="img/csharp.png" alt="C# Icon">
+                        <img src="img/unity.png" alt="Unity Icon">
+                        <img src="img/blender.png" alt="Blender Icon">
                     </div>
+                    <input type="button" value="Ver más">
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3>Development Platforms</h3>
-                        </button>
-                        <div id="dropContentDP" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">Unity</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Unreal Engine</span>
-                                <div class="level low">
-                                    <div class="level-bar low-bar"></div>
-                                    <span class="level-text">Low</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Android Studio</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Xcode</span>
-                                <div class="level low">
-                                    <div class="level-bar low-bar"></div>
-                                    <span class="level-text">Low</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span class="skill-name">Figma</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card c2 videogames">
+                <div class="icon">
+                    <img src="img/WildWestTreasures.JPG" alt="JurassicExtinction Game">
+                    <!--<video src="img/video1.mp4" muted></video>-->
                 </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3>ERP-CRM Services</h3>
-                        </button>
-                        <div id="dropContentERP" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">Odoo</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="info__description">
+                    <h3>Wild West Treasures</h3>
+                    <p data-cat="Videojoc d'aventures en 3D ambientat al vell oest. El jugador ha de recollir objectes amagats per l'escenari. Té una interfície orientativa i moviments del jugador amb diverses mecàniques."
+                    data-es="Videojuego de aventura 3D ambientado en el lejano oeste. El jugador debe recoger varios objetos escondidos por el escenario. Contiene una interfaz orientativa y un movimiento del jugador con diferentes añadidos."
+                    data-en="3D adventure game set in the Wild West. The player must collect hidden objects around the scene. It features a guiding interface and player movement with various mechanics.">
+                    Videojuego de aventura 3D ambientado en el lejano oeste. El jugador debe recoger varios objetos escondidos por el escenario. Contiene una interfaz orientativa y un movimiento del jugador con diferentes añadidos.
+                    </p>
+                <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                <div class="icons">
+                        <img src="img/csharp.png" alt="C# Icon">
+                        <img src="img/unity.png" alt="Unity Icon">
                     </div>
+                    <input type="button" value="Ver más">
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3>Web Development</h3>
-                        </button>
-                        <div id="dropContentWD" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">Unity</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card c2 videogames">
+                <div class="icon">
+                    <img src="img/Roguelike2D.JPG" alt="Roguelike2D Game">
+                    <!--<video src="img/video1.mp4" muted></video>-->
                 </div>
-                <div class="col">
-                    <div class="dropdown">
-                        <button class="dropBtn" onclick="toggleDropdown('dropContentID')">
-                            <h3>Operation Systems Administration</h3>
-                        </button>
-                        <div id="dropContentERP" class="dropdown-content oculto">
-                            <div class="skill">
-                                <span class="skill-name">Odoo</span>
-                                <div class="level high">
-                                    <div class="level-bar high-bar"></div>
-                                    <span class="level-text">High</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="info__description">
+                    <h3>Roguelike 2D</h3>
+                    <p data-cat="Videojoc de supervivència en 2D d'estil Roguelike. El jugador ha de matar enemics i sobreviure en una masmorra per obtenir punts. Inclou recollida d'objectes i varietat d'armes i poders."
+                    data-es="Videojuego de supervivencia 2D del estilo Roguelike. El jugador debe matar a los enemigos y sobrevivir atrapado en una mazmorra para conseguir puntos. Recogida de objetos y con variedad de armas y poderes."
+                    data-en="2D survival video game in Roguelike style. The player must kill enemies and survive in a dungeon to earn points. It includes item collection and a variety of weapons and powers.">
+                    Videojuego de supervivencia 2D del estilo Roguelike. El jugador debe matar a los enemigos y sobrevivir atrapado en una mazmorra para conseguir puntos. Recogida de objetos y con variedad de armas y poderes.
+                    </p>                    
+                    <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                <div class="icons">
+                    <img src="img/csharp.png" alt="C# Icon">
+                    <img src="img/unity.png" alt="Unity Icon">
+                </div>
+                    <input type="button" value="Ver más">
+                </div>
+            </div>
+            <div class="card c2 videogames">
+                <div class="icon">
+                    <img src="img/JurassicExtinction.JPG" alt="Roguelike2D Game">
+                    <!--<video src="img/video1.mp4" muted></video>-->
+                </div>
+                <div class="info__description">
+                    <h3>Jurassic Extinction</h3>
+                    <p data-cat="Videojoc arcade en 2D. Amb dos modes de joc: Manual i Automàtic. El jugador ha de matar enemics i sobreviure en una masmorra per aconseguir punts. Recollida d'objectes i amb varietat d'armes i poders."
+                    data-es="Videojuego arcade 2D. Con dos modos de juego: Manual y Automático. El jugador debe matar a los enemigos y sobrevivir atrapado en una mazmorra para conseguir puntos. Recogida de objetos y con variedad de armas y poderes."
+                    data-en="2D arcade video game with two game modes: Manual & Automatic. The player must kill enemies and survive trapped in a dungeon to earn points. It includes item collection and a variety of weapons and powers.">
+                    Videojuego arcade 2D. Con dos modos de juego: Manual y Automático. El jugador debe matar a los enemigos y sobrevivir atrapado en una mazmorra para conseguir puntos. Recogida de objetos y con variedad de armas y poderes.
+                    </p>
+                    <p data-cat="Tecnologies utilitzades:" data-es="Tecnologías utilizadas:" data-en="Technologies used:">Tecnologías utilizadas:</p>
+                    <div class="icons">
+                        <img src="img/csharp.png" alt="C# Icon">
+                        <img src="img/unity.png" alt="Unity Icon">
                     </div>
+                    <input type="button" value="Ver más">
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Historial educativo</h3>
-                    <div class="item izq">
-                        <h4>Bootcamp de Desenvolupament d'Aplicacions Mòbils (Android & iOS) - Programa Singulars</h4>
-                        <span class="centro">Eurecat Academy</span>
-                        <span class="fecha">Mar 2024 - Jul 2024</span>
-                        <p>Desenvolupar aplicacions per a dispositius mòbils (smartphones i tablets) amb sistemes operatius oberts i propiertaris (iOS).</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentPL')">
+                        <h3 data-cat="Llenguatges de Programació" data-es="Lenguajes de Programación" data-en="Programming Languages">Lenguajes de Programación</h3>
+                    </button>
+                    <div id="dropContentPL" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">C#</span>
+                            <img src="img/csharp.png" class="skill-icon" alt="C# Icon">
                         </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>CFGS - Desenvolupament d'Aplicacions Multiplataforma, Perfil Professional en Oci Digital i Videojocs</h4>
-                        <span class="centro">Institut Tecnològic de Barcelona</span>
-                        <span class="fecha">2021 - 2023</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                        <div class="skill">
+                            <span class="skill-name">Kotlin</span>
+                            <img src="img/kotlin.png" class="skill-icon" alt="Kotlin Icon">
                         </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Grau en Estadística Aplicada (No finalitzat)</h4>
-                        <span class="centro">Universitat Autònoma de Barcelona</span>
-                        <span class="fecha">2020 - 2021</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                        <div class="skill">
+                            <span class="skill-name">Swift</span>
+                            <img src="img/swift.png" class="skill-icon" alt="Swift Icon">
                         </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Títol de batxillerat científic (LOE 2000)</h4>
-                        <span class="centro">Institut Joan Ramón Benaprès</span>
-                        <span class="fecha">2018 - 2020</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <img src="img/js.png" class="skill-icon" alt="JavaScript Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">TypeScript</span>
+                            <img src="img/ts.png" class="skill-icon" alt="TypeScript Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Visual Basic</span>
+                            <img src="img/visualbasic.png" class="skill-icon" alt="Visual Basic Icon">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentDM')">
+                        <h3 data-cat="Gestió de Bases de Dades" data-es="Gestión de Bases de Datos" data-en="Database Management">Gestión de Bases de Datos</h3>
+                    </button>
+                    <div id="dropContentDM" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">MySQL</span>
+                            <img src="img/mysql.png" class="skill-icon" alt="MySQL Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">PostgreSQL</span>
+                            <img src="img/postgresql.png" class="skill-icon" alt="PostgreSQL Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">MongoDB</span>
+                            <img src="img/mongodb.png" class="skill-icon" alt="MongoDB Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentDP')">
+                        <h3 data-cat="Plataformes de Desenvolupament" data-es="Plataformas de Desarrollo" data-en="Development Platforms">Plataformas de Desarrollo</h3>
+                    </button>
+                    <div id="dropContentDP" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">Unity</span>
+                            <img src="img/unity.png" class="skill-icon" alt="Unity Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Android Studio</span>
+                            <img src="img/androidstudio.png" class="skill-icon" alt="Android Studio Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Xcode</span>
+                            <img src="img/xcode.png" class="skill-icon" alt="Xcode Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Figma</span>
+                            <img src="img/figma.png" class="skill-icon" alt="Figma Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Unreal Engine</span>
+                            <img src="img/unrealengine.png" class="skill-icon" alt="Unreal Engine Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentWD')">
+                        <h3 data-cat="Desenvolupament Web" data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h3>
+                    </button>
+                    <div id="dropContentWD" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">HTML</span>
+                            <img src="img/html.png" class="skill-icon" alt="HTML Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">CSS</span>
+                            <img src="img/css.png" class="skill-icon" alt="CSS Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <img src="img/js.png" class="skill-icon" alt="JavaScript Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentERP')">
+                        <h3 data-cat="Serveis ERP-CRM" data-es="Servicios ERP-CRM" data-en="ERP-CRM Services">Servicios ERP-CRM</h3>
+                    </button>
+                    <div id="dropContentERP" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">Odoo</span>
+                            <img src="img/odoo.png" class="skill-icon" alt="Odoo Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="dropBtn" onclick="toggleDropdown('dropContentPM')">
+                        <h3 data-cat="Gestió de Projectes / Versions" data-es="Gestión de Proyectos / Versiones" data-en="Project / Version Management">Gestión de Proyectos / Versiones</h3>
+                    </button>
+                    <div id="dropContentPM" class="dropdown-content oculto">
+                        <div class="skill">
+                            <span class="skill-name">JIRA</span>
+                            <img src="img/jira.png" class="skill-icon" alt="JIRA Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">GitHub</span>
+                            <img src="img/github.png" class="skill-icon" alt="GitHub Icon">
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">GitLab</span>
+                            <img src="img/gitlab.png" class="skill-icon" alt="GitLab Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="col derecha">
-                    <h3>Experiencia laboral</h3>
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2 data-cat="Currículum" data-es="Currículum" data-en="Curriculum">Currículum</h2>
+        <div class="fila">
+            <div id="education" class="tab-content active col izquierda">
+                <h3 data-cat="Historial educatiu" data-es="Historial educativo" data-en="Education">Historial educativo</h3>
+                <div class="item izq">
+                    <h4 data-cat="Bootcamp de Desenvolupament d'Aplicacions Mòbils (Android & iOS) / 430H - Programa Singulars" 
+                        data-es="Bootcamp de Desarrollo de Aplicaciones Móviles (Android & iOS) / 430H - Programa Singulars" 
+                        data-en="Mobile Application Development Bootcamp (Android & iOS) / 430H - Programa Singulars">
+                        Bootcamp de Desenvolupament d'Aplicacions Mòbils (Android & iOS) / 430H - Programa Singulars
+                    </h4>
+                    <span class="casa">Eurecat Academy</span>
+                    <span class="fecha">Mar 2024 - Jul 2024</span>
+                    <p data-cat="Desenvolupar aplicacions per a dispositius mòbils (smartphones i tablets) amb sistemes operatius oberts i propietaris (iOS)."
+                       data-es="Desarrollar aplicaciones para dispositivos móviles (smartphones y tablets) con sistemas operativos abiertos y propietarios (iOS)."
+                       data-en="Develop applications for mobile devices (smartphones and tablets) with open and proprietary operating systems (iOS).">
+                       Desarrollar aplicaciones para dispositivos móviles (smartphones y tablets) con sistemas operativos abiertos y propietarios (iOS).
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4 data-cat="CFGS - Desenvolupament d'Aplicacions Multiplataforma, Perfil Professional en Oci Digital i Videojocs" 
+                        data-es="CFGS - Desarrollo de Aplicaciones Multiplataforma, Perfil Profesional en Ocio Digital y Videojuegos" 
+                        data-en="CFGS - Development of Multiplatform Applications, Professional Profile in Digital Entertainment and Video Games">
+                        CFGS - Desarrollo de Aplicaciones Multiplataforma, Perfil Profesional en Ocio Digital y Videojuegos
+                    </h4>
+                    <span class="casa">Institut Tecnològic de Barcelona</span>
+                    <span class="fecha">2021 - 2023</span>
+                    <p data-cat="Desenvolupament i disseny d'aplicacions multiplataforma, amb una especialització en l'oci digital i els videojocs. S'adquereixen habilitats de desenvolupador en programació, orientada a objectes i es treballa amb interfícies gràfiques com Unity per crear experiències interactives innovadores."
+                       data-es="Desarrollo y diseño de aplicaciones multiplataforma, con una especialización en el ocio digital y los videojuegos. Se adquieren habilidades de desarrollador en programación orientada a objetos y se trabaja con interfaces gráficas como Unity para crear experiencias interactivas innovadoras."
+                       data-en="Development and design of multiplatform applications, with a specialization in digital entertainment and video games. Skills as a developer in object-oriented programming are acquired, and graphical interfaces such as Unity are used to create innovative interactive experiences.">
+                       Desarrollo y diseño de aplicaciones multiplataforma, con una especialización en el ocio digital y los videojuegos. Se adquieren habilidades de desarrollador en programación orientada a objetos y se trabaja con interfaces gráficas como Unity para crear experiencias interactivas innovadoras.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4 data-cat="Grau en Estadística Aplicada (No finalitzat)" 
+                        data-es="Grado en Estadística Aplicada (No finalizado)" 
+                        data-en="Degree in Applied Statistics (Not completed)">
+                        Grado en Estadística Aplicada (No finalizado) 
+                    </h4>
+                    <span class="casa" data-cat="Universitat Autònoma de Barcelona">Universitat Autònoma de Barcelona</span>
+                    <span class="fecha">2020 - 2021</span>
+                    <p data-cat="Aplicació de mètodes estadístics avançats per analitzar dades i resoldre problemes reals en diversos àmbits. Estudi d'àlgebra i proporció numèrica enfocat a l'anàlisi de les dades."
+                       data-es="Aplicación de métodos estadísticos avanzados para analizar datos y resolver problemas reales en diversos ámbitos. Estudio de álgebra y proporción numérica enfocado al análisis de datos."
+                       data-en="Application of advanced statistical methods to analyze data and solve real problems in various fields. Study of algebra and numerical proportion focused on data analysis.">
+                       Aplicación de métodos estadísticos avanzados para analizar datos y resolver problemas reales en diversos ámbitos. Estudio de álgebra y proporción numérica enfocado al análisis de datos.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4 data-cat="Títol de batxillerat científic (LOE 2000)" 
+                        data-es="Título de bachillerato científico (LOE 2000)" 
+                        data-en="Scientific Baccalaureate Degree (LOE 2000)">
+                        Título de bachillerato científico (LOE 2000)
+                    </h4>
+                    <span class="casa" data-cat="Institut Joan Ramón Benaprès">Institut Joan Ramón Benaprès</span>
+                    <span class="fecha">2018 - 2020</span>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="work" class="tab-content col derecha">
+                <h3 data-cat="Experiència laboral" data-es="Experiencia laboral" data-en="Work Experience">Experiencia laboral</h3>
                     <div class="item der">
-                        <h4>Estudiant de pràctiques</h4>
-                        <span class="centro">DXC Technology, Barcelona</span>
-                        <span class="fecha">2023</span>
-                        <p><b>Business Applicacion Engineer Junior</b> en el projecte tSocial dintre del programa de Transformació Digital del tramitador de Prestacions Socials</p>
+                        <h4>
+                            Business Application Engineer Junior
+                        </h4>
+                        <span class="casa">DXC Technology, Barcelona</span>
+                        <span class="fecha">Feb 2023 - Jun 2023</span>
+                        <p data-cat="Estudiant de pràctiques en el projecte tSocial dintre del programa de Transformació Digital del tramitador de Prestacions Socials"
+                           data-es="Estudiante en prácticas en el proyecto tSocial dentro del programa de Transformación Digital del tramitador de Prestaciones Sociales"
+                           data-en="Intern Student in the tSocial project within the Digital Transformation program of the Social Benefits Manager">
+                           <b>Estudiante en prácticas</b> en el proyecto tSocial dentro del programa de Transformación Digital del tramitador de Prestaciones Sociales"
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Cambrer de barra</h4>
-                        <span class="centro">Penya Barcelonista Aitana Bonmatí, Sant Pere de Ribes</span>
-                        <span class="fecha">2023</span>
-                        <span class="centro">La Xixonenca, Sant Pere de Ribes</span>
-                        <span class="fecha">2019 - 2021</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4 data-cat="Cambrer de barra" 
+                            data-es="Camarero de barra" 
+                            data-en="Bar Waiter">
+                            Camarero de barra
+                        </h4>
+                        <span class="casa">Penya Barcelonista Aitana Bonmatí</span>
+                        <span class="fecha">Jun 2023 - Set 2023</span>
+                        <span class="casa">La Xixonenca</span>
+                        <span class="fecha">Jun - Set 2019 / 2020 / 2021</span>
+                        <p data-cat="Atenció al client, manipulació de begudes i aliments, control de ventes i servei a les taules. Organització i control de l’establiment."
+                           data-es="Atención al cliente, manipulación de bebidas y alimentos, control de ventas y servicio a las mesas. Organización y control del establecimiento."
+                           data-en="Customer service, handling of drinks and food, sales control and table service. Organization and control of the establishment.">
+                           Atención al cliente, manipulación de bebidas y alimentos, control de ventas y servicio a las mesas. Organización y control del establecimiento.
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Cambrer de sala</h4>
-                        <span class="centro">Servihostel ETT S.L.</span>
-                        <span class="fecha">2022</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4 data-cat="Cambrer de sala" 
+                            data-es="Camarero de sala" 
+                            data-en="Floor Waiter">
+                            Camarero de sala
+                        </h4>
+                        <span class="casa">Servihostel ETT S.L.</span>
+                        <span class="fecha">Jun 2022 - Set 2022</span>
+                        <p data-cat="Preparació de l’espai de l’esdeveniment, recepció de convidats/des, servei de begudes i aliments."
+                           data-es="Preparación del espacio del evento, recepción de invitados/as, servicio de bebidas y alimentos."
+                           data-en="Preparation of the event space, reception of guests, service of drinks and food.">
+                           Preparación del espacio del evento, recepción de invitados/as, servicio de bebidas y alimentos.
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
+
+<!-- SECCION CONTACTO -->
+ <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2 data-cat="CONTACTE" data-es="CONTACTO" data-en="CONTACT">CONTACTO</h2>
+            <h2 data-cat="Contacte" data-es="Contacto" data-en="Contact">Contacto</h2>
             <div class="formulario">
-                <input type="text" id="full-name" placeholder="Enter your full name..." required>
-                <input type="email" id="email" placeholder="Enter your email..." required>
-                <textarea id="message" cols="30" rows="10" placeholder="Enter your message.." required></textarea>
+                <input type="text" placeholder="Ingresa tu nombre completo..." data-cat="Introdueix el teu nom complet..." data-es="Ingresa tu nombre completo..." data-en="Enter your full name..." required>
+                <input type="email" id="email" placeholder="Ingresa tu correo electrónico..." data-cat="Introdueix el teu correu electrònic..." data-es="Ingresa tu correo electrónico..." data-en="Enter your email..." required>
+                <textarea id="message" cols="30" rows="10" placeholder="Ingresa tu mensaje..." data-cat="Introdueix el teu missatge..." data-es="Ingresa tu mensaje..." data-en="Enter your message..." required></textarea>
                 <button id="form-button">
                     <span data-cat="Enviar Missatge" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
                     <i class="fa-solid fa-paper-plane"></i>
@@ -468,10 +530,10 @@
                 <p class="form-response" id="form-response" style="display: none; color: #1CB698;"></p>
             </div>
         </div>
-    </section>
+</section> 
 
-    <!-- footer -->
-    <footer>
+<!-- footer -->
+<footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -482,8 +544,7 @@
             <a href="#"><i class="fa-brands fa-itch-io"></i></a>
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
-    </footer>
-
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

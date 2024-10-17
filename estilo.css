@@ -71,6 +71,7 @@ html{
     display: none;
 }
 
+
 /* SECCION INICIO */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
@@ -149,10 +150,9 @@ html{
     padding: 20px 0;
 }
 .inicio .contenido-presentacion h1{
-    font-size: 25px;
-    font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
+    margin: 0 auto;
+    color: rgba(150, 150, 150);
 }
 
 /* SECCION SOBRE MI*/
@@ -294,93 +294,48 @@ a {
 }
 
 /* SECCION S K I L L S */
-.skills{
+.skills {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+.skills .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.skills h2{
+.skills h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
-.skills .fila{
+.skills .fila {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Añadir espacio entre los cuadros */
 }
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
+.skills .fila .col {
+    width: calc(50% - 10px); /* Ajustar el ancho para tener en cuenta el gap */
+    padding: 10px;
 }
-.skills .fila .col h3{
+.skills .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.skills .skill {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.skills .fila .col .dropdown {
+    border: 2px solid #1CB698;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
 }
-.skills .skill .skill-name {
-    font-weight: bold;
-    font-size: 25px; /* Ajusta el tamaño según tus preferencias */
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    font-size: 15px; /* Ajusta el tamaño según tus preferencias */
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .level {
-    display: flex;
-    align-items: center;
-}
-.skills .skill .level .level-text {
-    font-size: 20px;
-    font-weight: bold; /* Ajusta el tamaño según tus preferencias */
-    color: #fff;
-}
-.level-bar {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.level-bar.high-bar {
-    background-color: #1CB698;
-}
-
-.level-bar.medium-bar {
-    background-color: #FFD700;
-}
-
-.level-bar.low-bar {
-    background-color: #FF4500;
-}
-.skills .fila .col button{
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.skills .fila .col .dropdown button{
+.skills .fila .col .dropdown button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     width: 100%;
     background-color: #1e2326;
     color: #fff;
-    border: 2px solid #1CB698;
+    border: none; /* Quitar borde del botón */
     transition: background-color 0.3s, color 0.3s;
 }
 .skills .fila .col .dropdown button:hover {
@@ -395,103 +350,220 @@ a {
     border: 1px solid #1CB698;
     border-radius: 8px;
 }
-.skills .fila .col .dropdown .dropdown-content .skill {
+.skills .skill {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
-.oculto{
+.skills .skill .skill-name {
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.skill-icon {
+    width: 30px;
+    height: 30px;
+}
+.oculto {
     display: none;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
+
+
+/* SECCIÓN PROYECTOS */
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #2a2f33;
+    color: #fff;
+    text-align: center;
 }
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
+.proyectos h2 {
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 40px;
+}
+.proyectos-filters {
+    margin-bottom: 20px;
+}
+.proyectos-filters button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Righteous', sans-serif;
+}
+.proyectos-filters button:hover,
+.proyectos-filters button.active {
+    background-color: #1CB698;
+    border-color: #1CB698;
+    color: #1e2326; 
+}
+.container__card {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px -10px #20202049;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 40px -10px #20202049;
 }
 
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
+
+.card .icon {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
+.card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.card .icon video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card:hover .icon video {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
+.card:hover .icon img {
+    opacity: 0;
 }
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
+/*.card .icon {
+    width: 100%;
+    height: 220px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.card .icon video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card:hover .icon video {
+    transform: scale(1.1);
+}*/
+.info__description {
+    width: 100%;
+    background: #EFF3F5;
+    padding: 20px;
+    transition: margin-top 400ms cubic-bezier(0.5, 0, 0, 1);
+    border-radius: 0 0 20px 20px;
+    margin-top: -220px;
+}
+.card:hover .info__description {
+    margin-top: 0;
+}
+.info__description h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.info__description p {
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+.info__description input {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: #2196f3;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+}
+.info__description input:hover {
+    box-shadow: 1px 1px 30px -5px #20202070;
+}
+.c1 .icon {
+    background: #DD4B25;
+}
+.c1 .icon video {
+    filter: brightness(0.7) contrast(1.2);
+}
+.c1 .info__description {
+    background: #DD4B25;
+}
+.c1 .info__description input {
+    background: #DD4B25;
+}
+.c2 .icon {
+    background: #146EB0;
+}
+.c2 .icon video {
+    filter: brightness(0.7) contrast(1.2);
+}
+.c2 .info__description {
+    background: #146EB0;
+}
+.c2 .info__description input {
+    background: #146EB0;
+}
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
-/* SECCION CURRICULUM */
+/* SECCION CURRICULUM 
 .curriculum{
     background-color: #1e2326;
     color: #fff;
@@ -597,85 +669,286 @@ a {
     float: left;
     position: relative;
     bottom: 4px;
-}
+} */
 
-/*SECCION PROYECTOS*/
-.proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 50px 20px;
+/* SECCION CURRICULUM 
+.curriculum {
     background-color: #1e2326;
     color: #fff;
+    padding: 30px 20px;
+}
+.curriculum .contenido-seccion {
+    max-width: 800px;
+    margin: auto;
+}
+.curriculum h2 {
+    font-size: 36px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.tab-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Righteous';
+    transition: background-color 0.3s, color 0.3s;
+}
+.tab-button:hover,
+.tab-button.active {
+    background-color: #1CB698;
+    color: #1e2326;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab-content {
+    display: none;
+    width: 100%;
+}
+.tab-content.active {
+    display: block;
+}
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #1CB698;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    position: relative;
+    padding: 10px 20px;
+    width: 100%; 
+}
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+.timeline-item.right {
+    left: 50%;
+}
+.timeline-dot {
+    position: absolute;
+    left: 0; 
+    top: 15px;
+    width: 14px;
+    height: 14px;
+    background: #1CB698;
+    border-radius: 50%;
+}
+.timeline-content {
+    background: #252A2E;
+    padding: 15px;
+    border-radius: 5px;
+}
+.timeline-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.timeline-content .centro {
+    color: #1CB698;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+.timeline-content .fecha {
+    display: block;
+    color: #1CB698;
+    margin-bottom: 5px;
+}*/
+/* SECCION CURRICULUM */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-.proyectos h2 {
+.tab-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Righteous';
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+    background-color: #1CB698;
+    color: #1e2326;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-content {
+    display: block; /* Asegúrate de que las secciones estén ocultas por defecto */
+    width: 100%;
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+.curriculum {
+    background-color: #2a2f33;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
-    width: 100%;
-    margin-bottom: 40px;
+    padding: 20px 0;
 }
 
-.proyectos-item {
-    position: relative;
-    overflow: hidden;
-    width: 300px; /* Ajusta el tamaño según sea necesario */
-    height: 200px; /* Ajusta el tamaño según sea necesario */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.proyectos-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.proyectos-item:hover .proyectos-video {
-    transform: scale(1.1);
-}
-.proyectos-filters {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.proyectos-filters button {
-    background-color: #1e2326;
-    color: #fff;
-    border: 2px solid #1CB698;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 16px;
-    border-radius: 8px; /* Añade bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade sombra */
-}
-
-.proyectos-filters button:hover {
-    background-color: #1CB698;
-    color: #1e2326;
-    transform: translateY(-3px); /* Levanta el botón al pasar el ratón */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
-}
-
-.proyectos-filters button:active {
-    transform: translateY(0); /* Restablece la posición al hacer clic */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Restablece la sombra al hacer clic */
-}
-
-.proyectos-container {
+.curriculum .fila {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    justify-content: center; 
-    width: 100%;
 }
+
+.curriculum .fila .col {
+    flex: 1;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Estilos para la columna de educación */
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+/* Estilos para la columna de trabajo */
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.tab-content.active.col.derecha {
+    display: block; /* Muestra la columna derecha cuando la sección de trabajo está activa */
+}
+
+.tab-content.active.col.izquierda {
+    display: block; /* Muestra la columna izquierda cuando la sección de educación está activa */
+}
+
+.curriculum .fila .item {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
 
 /* SECCION CONTACTO */
 .contacto {
@@ -783,6 +1056,7 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -828,9 +1102,11 @@ footer .arriba{
     .curriculum .fila{
         display: block;
     }
+    
     .curriculum .fila .col{
         width: 90%;
     }
+
     .curriculum .fila .derecha{
         margin-left: 20px;
     }

@@ -19,8 +19,22 @@ function switchLanguage(language) {
     const elements = document.querySelectorAll('[data-cat], [data-es], [data-en]');
 
     elements.forEach(element => {
-        element.textContent = element.getAttribute(`data-${language}`);
+        if (element.placeholder) {
+            element.placeholder = element.getAttribute(`data-${language}`);
+        } else {
+            element.textContent = element.getAttribute(`data-${language}`);
+        }
     });
+
+    const cvLink = document.getElementById("cv-download");
+
+    if (language === "es") {
+        cvLink.href = "CV_NoeVillanueva ESP.pdf";
+    } else if (language === "en") {
+        cvLink.href = "CV_NoeVillanueva ENG.pdf";
+    } else if (language === "cat") {
+        cvLink.href = "CV_NoeVillanueva.pdf";
+    }
 }
 
 function seleccionar(){
@@ -52,8 +66,44 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
 document.addEventListener("DOMContentLoaded", function() {
+    const icons = document.querySelectorAll('.icon');
+
+    icons.forEach(icon => {
+        const video = icon.querySelector('video');
+        const img = icon.querySelector('img'); // Seleccionamos la imagen
+
+        icon.addEventListener('mouseover', function() {
+            video.play();
+            video.style.opacity = "1";  // Mostramos el video
+            img.style.opacity = "0";    // Ocultamos la imagen
+        });
+
+        icon.addEventListener('mouseout', function() {
+            video.pause();
+            video.currentTime = 0;      // Reiniciamos el video
+            video.style.opacity = "0";  // Ocultamos el video
+            img.style.opacity = "1";    // Mostramos la imagen
+        });
+    });
+});
+/*document.addEventListener("DOMContentLoaded", function() {
+    const icons = document.querySelectorAll('.icon');
+
+    icons.forEach(icon => {
+        const video = icon.querySelector('video');
+
+        icon.addEventListener('mouseover', function() {
+            video.play();
+        });
+
+        icon.addEventListener('mouseout', function() {
+            video.pause();
+            video.currentTime = 0; // Opcional: reiniciar el video al inicio
+        });
+    });
+});*/
+/*document.addEventListener("DOMContentLoaded", function() {
     const videos = document.querySelectorAll('.proyectos-video');
 
     videos.forEach(video => {
@@ -66,41 +116,95 @@ document.addEventListener("DOMContentLoaded", function() {
             video.currentTime = 0; // Opcional: reiniciar el video al inicio
         });
     });
-});
+});*/
 
 function filterProjects(category) {
-    const projects = document.querySelectorAll('.proyectos-item');
+    const buttons = document.querySelectorAll('.proyectos-filters button');
 
-    projects.forEach(project => {
-        if (category === 'all') {
-            project.style.display = 'block';
-        } else if (project.classList.contains(category)) {
-            project.style.display = 'block';
-        } else {
-            project.style.display = 'none';
-        }
+    // Remove active class from all buttons
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Add active class to the clicked button
+    event.currentTarget.classList.add('active');
+
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        const isMatchedCategory = category === 'all' || card.classList.contains(category);
+        card.style.display = isMatchedCategory ? 'block' : 'none';
     });
 }
+  
 
-document.getElementById('form-button').addEventListener('click', function() {
-    // Obtener los valores de los campos del formulario
-    const fullName = document.getElementById('full-name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('form-button').addEventListener('click', function() {
+        // Obtener los valores de los campos del formulario
+        const fullName = document.getElementById('full-name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-    // Verificar si los campos están llenos
-    if (fullName && email && message) {
-        // Simulación del envío del formulario
-        // Aquí puedes agregar tu lógica para enviar los datos a un servidor usando AJAX o fetch
-        
-        // Mostrar un mensaje de éxito
+        // Obtener el elemento de respuesta
         const responseElement = document.getElementById('form-response');
-        responseElement.textContent = "Your message has been sent successfully!";
-        responseElement.style.display = "block";
-    } else {
-        // Mostrar un mensaje de error si los campos no están llenos
-        const responseElement = document.getElementById('form-response');
-        responseElement.textContent = "Please fill in all fields.";
-        responseElement.style.display = "block";
-    }
+
+        // Verificar si los campos están llenos
+        if (fullName && email && message) {
+            // Verificar si el campo de correo contiene un '@'
+            if (email.includes('@')) {
+                // Construir el cuerpo del correo
+                const subject = 'Consulta sobre portafolio';
+                const body = `Hola Noé,
+
+Quiero consultarte sobre tu portafolio.
+
+Nombre: ${fullName}
+Correo: ${email}
+Mensaje: ${message}`;
+
+                // Codificar el sujeto y el cuerpo del correo
+                const mailtoLink = `mailto:nvillanuevamoya@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                // Abrir el enlace mailto
+                window.location.href = mailtoLink;
+
+                // Mostrar un mensaje de éxito
+                responseElement.textContent = "Your message has been prepared in your email client!";
+                responseElement.style.display = "block";
+            } else {
+                // Mostrar un mensaje de error si el correo no contiene un '@'
+                responseElement.textContent = "Please enter a valid email address.";
+                responseElement.style.display = "block";
+            }
+        } else {
+            // Mostrar un mensaje de error si los campos no están llenos
+            responseElement.textContent = "Please fill in all fields.";
+            responseElement.style.display = "block";
+        }
+    });
 });
+
+/*function showSection(sectionId) {
+    // Selecciona todas las secciones y botones
+    var sections = document.querySelectorAll('.tab-content');
+    var buttons = document.querySelectorAll('.tab-button');
+    
+    // Oculta todas las secciones y quita la clase 'active' de todos los botones
+    sections.forEach(function(section) {
+        section.classList.remove('active');
+    });
+    
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+    
+    // Muestra la sección activa y agrega la clase 'active' al botón correspondiente
+    document.getElementById(sectionId).classList.add('active');
+    document.querySelector(`.tab-button[onclick="showSection('${sectionId}')"]`).classList.add('active');
+}*/
+
+// Inicializa mostrando la sección de educación
+document.addEventListener('DOMContentLoaded', function() {
+    showSection('education');
+});
+
